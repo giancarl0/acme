@@ -1,0 +1,25 @@
+.acme-cards-container--insights {
+  .acme-cards {
+        div {
+            position: relative;
+        }
+        div:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-top: 80px solid white;
+            border-right: 80px solid transparent;
+            width: 0;
+        }
+        div:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            border-bottom: 80px solid white;
+            border-left: 80px solid transparent;
+            width: 0;
+        }
+    }
+}

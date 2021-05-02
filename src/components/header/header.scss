@@ -1,0 +1,29 @@
+@import '../../styles/theme.scss';
+
+.acme-header {
+    height: 150px;
+    padding: 0 15%;
+    display: grid;
+    align-items: end;
+    grid-template-columns: 174px 300px auto;
+    border-bottom: 25px solid var(--colors-primary-dark);
+}
+
+.acme-header__logo {
+    position: relative;
+    bottom: -10px;
+}
+
+.acme-header__site-title {
+    padding: 0 40px;
+    margin-bottom: 20px;
+    border-right: 2px solid var(--color-grey-accent);
+}
+
+$logo-title-width: calc( 260px + 174px );
+
+.acme-header__nav-buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-bottom: 20px;
+}

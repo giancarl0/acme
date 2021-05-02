@@ -1,0 +1,88 @@
+@import '../../styles/theme.scss';
+
+.acme-cards__container--main {
+    min-height: 280px;
+    max-height: 280px;
+    color: white;
+    background-color: var(--colors-primary);
+    p, h2, h3, h4 {
+        margin: 0;
+    }
+}
+
+.acme-cards__container--date {
+    width: 50px;
+    background-color: var(--colors-primary-dark);
+    position: relative;
+    left: 25px;
+    top: -20px;
+    text-align: center;
+    padding: 15px;
+}
+
+.acme-cards__month{
+    text-transform: uppercase;
+    line-height: 1em;
+    font-size: .9em;
+}
+
+.acme-cards__day{
+    line-height: 1em;
+    font-size: 2em;
+}
+
+.acme-cards__top-fold{
+    height: 20px;
+    background-color: var(--color-grey-bg);
+    position: relative;
+}
+
+div.acme-cards__top-fold:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 5px;
+    border-top: 20px solid transparent;
+    border-right: 20px solid var(--colors-primary-light);
+    width: 0;
+}
+
+.acme-cards__container--content {
+    min-height: 55px;
+    padding: 0 25px;
+}
+
+.acme-cards__title {
+    font-size: 1.25em;
+}
+
+.acme-cards__subtitle {
+    font-size: .75em;
+}
+
+.acme-cards__button {
+    margin: 20px 25px;
+}
+
+.acme-cards__container--location {
+    color: black;
+    position: relative;
+    text-align: right;
+    padding: .75em 25px;
+    background-color: var(--color-grey-bg);
+    overflow: hidden;
+}
+
+.acme-cards__location {
+    font-size: 1.2em;
+}
+
+div.acme-cards__container--location:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0px;
+    border-top: 80px solid var(--colors-primary);
+    border-right: 80px solid transparent;
+    width: 0;
+}

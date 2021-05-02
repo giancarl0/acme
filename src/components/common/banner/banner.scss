@@ -1,0 +1,50 @@
+@import '../../../styles/theme.scss';
+
+.acme-banner {
+    height: 430px;
+    overflow: hidden;
+    background-image: url('../../../assets/banner-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -140px;
+}
+
+.acme-banner-contents {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    z-index: 9;
+    padding: 0 15%;
+    height: 100%;
+    white-space: pre-line;
+    color: white;
+}
+
+.acme-banner-contents--left {
+    grid-template-columns: 1fr 1fr;
+}
+
+.acme-banner-contents--right {
+    grid-template-columns: 1fr 1fr;
+    direction: rtl;
+}
+
+.acme-banner-contents__header {
+    font-size: 2.5em;
+    font-weight: bold;
+    line-height: 1em;
+    margin-top: -.1em;
+    margin-bottom: .1em;
+}
+
+.acme-banner-contents__subheader {
+    font-size: 1.5em;
+    font-weight: 100;
+}
+
+.acme-banner-contents__overlay {
+    position: relative;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
